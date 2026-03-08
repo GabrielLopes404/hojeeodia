@@ -5,72 +5,72 @@
   --font-mono: "JetBrains Mono", monospace;
 
   /* Solidy Brand Colors */
-  --color-solidy-green: oklch(0.55 0.22 155);
-  --color-solidy-green-hover: oklch(0.48 0.2 155);
-  --color-solidy-yellow: oklch(0.85 0.16 85);
-  --color-solidy-blue: oklch(0.55 0.18 245);
+  --color-solidy-green: #22c55e;
+  --color-solidy-green-hover: #16a34a;
+  --color-solidy-yellow: #facc15;
+  --color-solidy-blue: #3b82f6;
 
   /* Base colors */
-  --color-background: oklch(1 0 0);
-  --color-foreground: oklch(0.18 0.04 155);
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
 
-  --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.18 0.04 155);
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
 
-  --color-popover: oklch(1 0 0);
-  --color-popover-foreground: oklch(0.18 0.04 155);
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0f172a;
 
-  --color-primary: oklch(0.55 0.22 155);
-  --color-primary-foreground: oklch(1 0 0);
+  --color-primary: #22c55e;
+  --color-primary-foreground: #ffffff;
 
-  --color-secondary: oklch(0.96 0.01 155);
-  --color-secondary-foreground: oklch(0.18 0.04 155);
+  --color-secondary: #f1f5f9;
+  --color-secondary-foreground: #0f172a;
 
-  --color-muted: oklch(0.96 0.01 155);
-  --color-muted-foreground: oklch(0.45 0.03 155);
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
 
-  --color-accent: oklch(0.96 0.01 155);
-  --color-accent-foreground: oklch(0.18 0.04 155);
+  --color-accent: #f1f5f9;
+  --color-accent-foreground: #0f172a;
 
-  --color-destructive: oklch(0.55 0.2 25);
-  --color-destructive-foreground: oklch(1 0 0);
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
 
-  --color-border: oklch(0.9 0.01 155);
-  --color-input: oklch(0.9 0.01 155);
-  --color-ring: oklch(0.55 0.22 155);
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #22c55e;
 
   --radius: 0.75rem;
 }
 
 @media (prefers-color-scheme: dark) {
   @theme inline {
-    --color-background: oklch(0.12 0.02 155);
-    --color-foreground: oklch(0.98 0 0);
+    --color-background: #0f172a;
+    --color-foreground: #f8fafc;
 
-    --color-card: oklch(0.16 0.02 155);
-    --color-card-foreground: oklch(0.98 0 0);
+    --color-card: #1e293b;
+    --color-card-foreground: #f8fafc;
 
-    --color-popover: oklch(0.16 0.02 155);
-    --color-popover-foreground: oklch(0.98 0 0);
+    --color-popover: #1e293b;
+    --color-popover-foreground: #f8fafc;
 
-    --color-primary: oklch(0.6 0.22 155);
-    --color-primary-foreground: oklch(0.12 0.02 155);
+    --color-primary: #22c55e;
+    --color-primary-foreground: #0f172a;
 
-    --color-secondary: oklch(0.22 0.03 155);
-    --color-secondary-foreground: oklch(0.98 0 0);
+    --color-secondary: #1e293b;
+    --color-secondary-foreground: #f8fafc;
 
-    --color-muted: oklch(0.22 0.03 155);
-    --color-muted-foreground: oklch(0.65 0.03 155);
+    --color-muted: #1e293b;
+    --color-muted-foreground: #94a3b8;
 
-    --color-accent: oklch(0.22 0.03 155);
-    --color-accent-foreground: oklch(0.98 0 0);
+    --color-accent: #1e293b;
+    --color-accent-foreground: #f8fafc;
 
-    --color-destructive: oklch(0.55 0.2 25);
-    --color-destructive-foreground: oklch(1 0 0);
+    --color-destructive: #ef4444;
+    --color-destructive-foreground: #ffffff;
 
-    --color-border: oklch(0.26 0.03 155);
-    --color-input: oklch(0.26 0.03 155);
-    --color-ring: oklch(0.6 0.22 155);
+    --color-border: #334155;
+    --color-input: #334155;
+    --color-ring: #22c55e;
   }
 }
 
@@ -87,10 +87,10 @@ body {
 /* Solidy custom animations */
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 0 0 oklch(0.55 0.22 155 / 0.4);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
   }
   50% {
-    box-shadow: 0 0 20px 4px oklch(0.55 0.22 155 / 0.3);
+    box-shadow: 0 0 20px 4px rgba(34, 197, 94, 0.3);
   }
 }
 
@@ -105,6 +105,6 @@ html {
 
 /* Selection color */
 ::selection {
-  background: oklch(0.55 0.22 155 / 0.3);
-  color: oklch(0.18 0.04 155);
+  background: rgba(34, 197, 94, 0.3);
+  color: #0f172a;
 }
